@@ -1,6 +1,11 @@
+import Head from "next/head";
+
 export default function IndexPage() {
   return (
     <div className="h-screen grid justify-center content-center ">
+      <Head>
+        <title>Its Asim</title>
+      </Head>
       <section>
         <h1 className="font-sans">
           <span className="block text-center text-5xl text-white">
