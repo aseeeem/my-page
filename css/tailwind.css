@@ -4,4 +4,5 @@
 
 body {
   @apply bg-indigo-900;
+  cursor: url("/candy-corn.png"), default;
 }
