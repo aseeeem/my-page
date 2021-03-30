@@ -1,8 +1,9 @@
 import Head from "next/head";
+import Link from 'next/link'
 
 export default function IndexPage() {
   return (
-    <div className="h-screen grid justify-center content-center ">
+    <div className="h-screen grid place-content-center">
       <Head>
         <title>Its Asim</title>
       </Head>
@@ -19,7 +20,15 @@ export default function IndexPage() {
       <section className="pt-8 text-white text-center">
         <p>I don't really have anything else to talk about rn</p>
         <p>But I promise to update this page when I do</p>
+        <p>oh, happy spring! keep staying safe! wear a mask!</p>
       </section>
+      {/* <section>
+        <p className="text-white text-center">I guess check out some of my &nbsp;
+          <Link href="/thoughts">
+            <a className="text-blue underline">thoughts</a>
+          </Link>?
+        </p>
+      </section> */}
     </div>
   );
 }
