@@ -22,13 +22,6 @@ export default function IndexPage() {
         <p>But I promise to update this page when I do</p>
         <p>oh, happy spring! keep staying safe! wear a mask!</p>
       </section>
-      {/* <section>
-        <p className="text-white text-center">I guess check out some of my &nbsp;
-          <Link href="/thoughts">
-            <a className="text-blue underline">thoughts</a>
-          </Link>?
-        </p>
-      </section> */}
     </div>
   );
 }
