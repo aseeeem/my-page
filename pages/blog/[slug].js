@@ -1,10 +1,14 @@
+import hydrate from 'next-mdx-remote/hydrate'
 import { getAllPostSlugs, getPostData } from "../../utils/posts";
 
-export default function Post({ content }) {
+export default function Post({ slug, meta, source }) {
+  const content = hydrate(source)
   return (
     <div>
-      {content.title}
-      <p>{content.slug}</p>
+      {meta.title}
+      <article>
+        {content}
+      </article>
     </div>
   )
 }
@@ -20,11 +24,13 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({ params }) {
   // get the data to actually render the post
-  const content = getPostData(params.slug)
+  const { slug, meta, source } = await getPostData(params.slug)
 
   return {
     props: {
-      content
+      slug,
+      meta,
+      source
     }
   }
 }

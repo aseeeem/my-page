@@ -12,3 +12,11 @@ I guess I wanna talk about
 ## Follow up
 
 boop
+
+```js
+const x = 'p'
+function z() {
+  let a = 100
+}
+
+```

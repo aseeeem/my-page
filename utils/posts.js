@@ -1,5 +1,5 @@
 const matter = require('gray-matter')
-
+const renderToString = require('next-mdx-remote/render-to-string')
 const { readdirSync, readFileSync } = require('fs')
 const { join } = require('path')
 
@@ -16,14 +16,16 @@ export function getAllPostSlugs() {
 /**
  * uses gray-matter to fetch frontmatter from post
  */
-export function getPostData(slug) {
+export async function getPostData(slug) {
   const fullPath = join('pages/blog/posts', `${slug}.md`)
-  const content = readFileSync(fullPath, 'utf-8')
+  const fileData = readFileSync(fullPath, 'utf-8')
   
-  const frontMatter = matter(content)
-
+  const { data, content } = matter(fileData)
+  const mdxSource = await renderToString(content)
+  
   return {
     slug,
-    ...frontMatter.data
+    meta: data,
+    source: mdxSource
   }
 }
