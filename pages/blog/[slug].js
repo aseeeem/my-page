@@ -1,15 +1,13 @@
 import hydrate from 'next-mdx-remote/hydrate'
+import Layout from '../../components/Layout'
 import { getAllPostSlugs, getPostData } from "../../utils/posts";
 
-export default function Post({ slug, meta, source }) {
+export default function Post({ meta, source }) {
   const content = hydrate(source)
   return (
-    <div>
-      {meta.title}
-      <article>
-        {content}
-      </article>
-    </div>
+    <Layout title={meta.title}>
+      {content}
+    </Layout>
   )
 }
 
