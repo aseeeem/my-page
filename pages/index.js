@@ -21,6 +21,9 @@ export default function IndexPage() {
         <p>I don't really have anything else to talk about rn</p>
         <p>But I promise to update this page when I do</p>
         <p>oh, happy spring! keep staying safe! wear a mask!</p>
+        <Link href="/blog/my-first-page">
+          <a>Click me!</a>
+        </Link>
       </section>
     </div>
   );
