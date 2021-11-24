@@ -1,22 +1,12 @@
 ---
-title: "It's about damn time"
+title: "Making this blog"
 ---
 
-# Its finally time
+# Making This Blog
+#### and the overengineering within
 
-## First subject
+## Getting the ingredients
 
-I guess I wanna talk about
+## Mixing them together
 
-
-## Follow up
-
-boop
-
-```js
-const x = 'p'
-function z() {
-  let a = 100
-}
-
-```
+## Adding the garnishes

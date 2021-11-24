@@ -1,6 +1,6 @@
 import hydrate from 'next-mdx-remote/hydrate'
 import Layout from '../../components/Layout'
-import { getAllPostSlugs, getPostData } from "../../utils/posts";
+import { getAllPostSlugs, getPostData } from "../../utils/posts"
 
 export default function Post({ meta, source }) {
   const content = hydrate(source)
