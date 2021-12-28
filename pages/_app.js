@@ -1,8 +1,5 @@
-import React from "react";
-import "../css/tailwind.css";
+import '../index.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export default function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps } />
 }
-
-export default MyApp;
