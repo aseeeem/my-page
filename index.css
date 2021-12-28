@@ -1,0 +1,39 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  font-family: monospace;
+  background-color: black;
+  max-height: 100vh;
+}
+
+#__next {
+  height: 90vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+p {
+  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+}
+
+span.name {
+  text-decoration: underline dotted pink;
+  -webkit-text-decoration: underline dotted pink;
+}
+
+.links a {
+  text-decoration: none;
+  color: lightpink;
+}
+
+.links svg {
+  vertical-align: middle;
+  color: lightblue;
+}
