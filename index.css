@@ -1,14 +1,24 @@
 html,body {
   margin: 0;
   padding: 0;
+  margin-left: 3vw;
   color: whitesmoke;
   font-family: monospace;
   background-color: black;
   max-height: 100vh;
 }
 
+header {
+  padding-top: 2vh;
+  font-size: 2vh;
+}
+
+footer {
+  padding-bottom: 2vh;
+}
+
 #__next {
-  height: 90vh;
+  height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
