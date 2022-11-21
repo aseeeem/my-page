@@ -3,15 +3,7 @@ import "./globals.css";
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html>
-      <body className="h-screen grid grid-cols-1 place-items-center text-slate-200">
-        <header>
-          <h1 className="lg:text-6xl text-4xl">
-            Hi, I'm{" "}
-            <span className="text-cyan-200" title="pronounced ah-sim">
-              Asim
-            </span>
-          </h1>
-        </header>
+      <body className="h-screen text-slate-200">
         {/* <NavComponent /> */}
         <main className="bg-black h-full">{children}</main>
       </body>
