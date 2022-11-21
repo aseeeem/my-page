@@ -1,7 +1,10 @@
+import Link from "next/link";
+import FadeInText from "../components/FadeInText";
+
 export default function Page() {
   return (
-    <section className="h-full flex flex-col justify-items-start">
-      <header className="pt-6 pb-6">
+    <div className="h-full grid grid-cols-1 place-items-center">
+      <header>
         <h1 className="lg:text-6xl text-4xl">
           Hi, I'm{" "}
           <span className="text-cyan-200" title="pronounced ah-sim">
@@ -9,13 +12,16 @@ export default function Page() {
           </span>
         </h1>
       </header>
-      <article className="lg:text-2xl text-justify lowercase">
-        <p>i like all things web dev</p>
-        <p>avid react dev, expressive coder</p>
-        <p>i'm still getting better tho</p>
-        <p>i'll start writing blogs soon</p>
-        <p>so yeah that'll be fun</p>
-      </article>
-    </section>
+      <section className="h-full">
+        <article className="lg:text-2xl text-justify lowercase">
+          <p className="pb-4 animate-fade-in">i like all things web dev</p>
+          <FadeInText delay={2}>
+            <Link className="underline" href="/blog">
+              checkout my latest article
+            </Link>
+          </FadeInText>
+        </article>
+      </section>
+    </div>
   );
 }

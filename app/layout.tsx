@@ -3,28 +3,29 @@ import "./globals.css";
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html>
-      <body className="h-screen flex flex-col">
-        <nav className="flex-row text-slate-100 h-10 sticky top-0">
-          <ul className="flex justify-evenly h-full items-center">
-            <li>
-              <Link className="hover:text-blue-300 hover:underline" href="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                className="hover:text-blue-300 hover:underline"
-                href="/blog"
-              >
-                Blog
-              </Link>
-            </li>
-          </ul>
-        </nav>
-        <main className="bg-black text-cyan-50 h-full grid self-center">
-          {children}
-        </main>
+      <body className="h-screen text-slate-200 font-mono">
+        {/* <NavComponent /> */}
+        <main className="bg-gray-900 h-full">{children}</main>
       </body>
     </html>
+  );
+}
+
+function NavComponent() {
+  return (
+    <nav className="text-slate-200 h-10 sticky top-0">
+      <ul className="h-full">
+        <li>
+          <Link className="hover:text-blue-300 hover:underline" href="/">
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link className="hover:text-blue-300 hover:underline" href="/blog">
+            Blog
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
