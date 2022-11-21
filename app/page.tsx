@@ -1,4 +1,5 @@
 import Link from "next/link";
+import FadeInText from "../components/FadeInText";
 
 export default function Page() {
   return (
@@ -14,9 +15,11 @@ export default function Page() {
       <section className="h-full">
         <article className="lg:text-2xl text-justify lowercase">
           <p className="pb-4 animate-fade-in">i like all things web dev</p>
-          <p className="opacity-0 animate-fade-in [animation-delay:2s] [animation-fill-mode:forwards] underline">
-            <Link href="/blog">checkout my latest article</Link>
-          </p>
+          <FadeInText delay={2}>
+            <Link className="underline" href="/blog">
+              checkout my latest article
+            </Link>
+          </FadeInText>
         </article>
       </section>
     </div>
