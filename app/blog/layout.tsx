@@ -6,9 +6,9 @@ export default function BlogLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className=" h-full grid grid-cols-3 grid-rows-3">
+    <div className="h-full grid grid-cols-[0.5fr_3fr_0.5fr] grid-rows-[0.5fr_3fr_0.5fr]">
       <header className="pt-6 pb-6 text-center lg:text-left col-start-2">
-        <h1 className="text-3xl text-cyan-200 font-extrabold underline">
+        <h1 className="text-2xl text-cyan-200 font-extrabold underline">
           <Link href="/">Asim's Idea Dump</Link>
         </h1>
       </header>
