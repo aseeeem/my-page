@@ -15,7 +15,7 @@ export default function BlogLayout({
       <section className="h-full row-start-2 col-start-2 text-lg">
         {children}
       </section>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
@@ -23,7 +23,7 @@ export default function BlogLayout({
 function Footer() {
   return (
     <footer className="row-start-3 col-start-2 text-center">
-      Footer...eventually
+      <div className="flex text-xs h-full items-end">&copy; Asim 2022</div>
     </footer>
   );
 }

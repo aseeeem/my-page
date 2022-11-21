@@ -3,9 +3,9 @@ import "./globals.css";
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html>
-      <body className="h-screen text-slate-200">
+      <body className="h-screen text-slate-200 font-mono">
         {/* <NavComponent /> */}
-        <main className="bg-black h-full">{children}</main>
+        <main className="bg-gray-900 h-full">{children}</main>
       </body>
     </html>
   );
