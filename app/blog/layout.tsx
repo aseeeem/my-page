@@ -12,7 +12,7 @@ export default function BlogLayout({
           <Link href="/">Asim's Idea Dump</Link>
         </h1>
       </header>
-      <section className="h-full row-start-2 col-start-2 text-lg">
+      <section className="h-full row-start-2 col-start-2 text-lg md:text-2xl">
         {children}
       </section>
       <Footer />
