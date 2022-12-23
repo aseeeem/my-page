@@ -14,7 +14,7 @@ Too often I'm communicating with someone or reading some documentation and it co
 
 "Here?" I ask myself. **Where is here?**
 
-I scan the sentence until I find where they want me to look. A small link, barely visible put at the end of the sentence. Aaah... its right [there](#).
+I scan the sentence until I find where they want me to look. A small link, barely visible, placed at the end of the sentence. Aaah... its right [there](#).
 
 Why is it so undiscoverable? Why do I have to point my cursor over this one singular word in order to click on the link?
 
