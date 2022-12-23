@@ -14,10 +14,10 @@ Too often I'm communicating with someone or reading some documentation and it co
 
 "Here?" I ask myself. **Where is here?**
 
-I scan the sentence until I find where they want me to look. A small link, barely visible put at the end of the sentence. Aaah... its right [there]().
+I scan the sentence until I find where they want me to look. A small link, barely visible put at the end of the sentence. Aaah... its right [there](#).
 
 Why is it so undiscoverable? Why do I have to point my cursor over this one singular word in order to click on the link?
 
-There's nothing wrong with telling me [to look here for more information](), or to [check out this story for more details]().
+There's nothing wrong with telling me [to look here for more information](#), or to [check out this story for more details](#).
 
-Lets stop being terse in our links. Just make the whole damn sentence a hyperlink for all I care. But enough of [this](). I've had it up to [here]().
+Lets stop being terse in our links. Just make the whole damn sentence a hyperlink for all I care. But enough of [this](#). I've had it up to [here](#).
