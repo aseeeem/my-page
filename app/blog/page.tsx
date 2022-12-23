@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { use } from "react";
-import { type Post, getAllPosts } from "./posts";
+import Link from 'next/link'
+import { use } from 'react'
+import { type Post, getAllPosts } from './posts'
 
 // TODO
 // make the link at the homepage have a query param of like "?article=newest" or something
@@ -10,7 +10,7 @@ import { type Post, getAllPosts } from "./posts";
  * the subroute [slug]/page.tsx will do the actual article rendering
  */
 export default function BlogPostList({ params }) {
-  const posts = getAllPosts();
+  const posts = getAllPosts()
   return (
     <article>
       <ul>
@@ -19,17 +19,17 @@ export default function BlogPostList({ params }) {
         ))}
       </ul>
     </article>
-  );
+  )
 }
 
 function PostLink({ post }: { post: Post }) {
-  const { slug, date, title } = post;
+  const { slug, date, title } = post
   return (
     <li>
       <Link className="underline" href={`/blog/${slug}`}>
         {title}
-      </Link>{" "}
+      </Link>{' '}
       - {date}
     </li>
-  );
+  )
 }

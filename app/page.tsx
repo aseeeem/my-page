@@ -1,11 +1,11 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className="h-full grid grid-cols-1 place-items-center">
       <header>
         <h1 className="md:text-6xl text-4xl">
-          Hi, I'm{" "}
+          Hi, I'm{' '}
           <span className="text-cyan-200" title="pronounced ah-sim">
             Asim
           </span>
@@ -22,5 +22,5 @@ export default function Home() {
         </article>
       </section>
     </div>
-  );
+  )
 }

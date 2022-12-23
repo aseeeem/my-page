@@ -1,5 +1,5 @@
-import Link from "next/link";
-import "./globals.css";
+import Link from 'next/link'
+import './globals.css'
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html>
@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <main className="bg-gray-900 h-full">{children}</main>
       </body>
     </html>
-  );
+  )
 }
 
 function NavComponent() {
@@ -27,5 +27,5 @@ function NavComponent() {
         </li>
       </ul>
     </nav>
-  );
+  )
 }

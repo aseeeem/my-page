@@ -3,5 +3,5 @@ export default function BlogHead() {
     <>
       <title>Asim's Idea Dump</title>
     </>
-  );
+  )
 }
