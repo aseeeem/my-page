@@ -1,19 +1,35 @@
-import FadeInText from "../../components/FadeInText";
+import Link from 'next/link'
+import { use } from 'react'
+import { type Post, getAllPosts } from './posts'
 
+// TODO
+// make the link at the homepage have a query param of like "?article=newest" or something
+// the BlogsPostList param can then auto foward to the most recent or something? idk there's probably a way to do that
 /**
  * list of blog pages available
  * the subroute [slug]/page.tsx will do the actual article rendering
  */
-export default function BlogPage({ params }) {
+export default function BlogPostList({ params }) {
+  const posts = getAllPosts()
   return (
     <article>
-      <p>this is where i'd put my blog posts...</p>
-      <FadeInText delay={2}>
-        <span className="italic">if i had any</span>
-      </FadeInText>
-      <FadeInText delay={4}>
-        that being said, its under construction!
-      </FadeInText>
+      <ul>
+        {posts.map((post) => (
+          <PostLink key={post.slug} post={post} />
+        ))}
+      </ul>
     </article>
-  );
+  )
+}
+
+function PostLink({ post }: { post: Post }) {
+  const { slug, date, title } = post
+  return (
+    <li>
+      <Link className="underline" href={`/blog/${slug}`}>
+        {title}
+      </Link>{' '}
+      - {date}
+    </li>
+  )
 }
