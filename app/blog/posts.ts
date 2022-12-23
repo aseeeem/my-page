@@ -31,7 +31,7 @@ export function getPostBySlug(slug: Post['slug']): Post {
   const posts = getAllPosts();
   const post =  posts.filter(post => post.slug === slug)[0];
   if (!post) {
-    throw new Error('no posts found!')
+    throw new Error('no post found!')
   }
   return post;
 }

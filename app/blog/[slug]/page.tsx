@@ -9,9 +9,6 @@ export default function BlogArticle({ params }: { params: { slug: string } }) {
   );
 }
 
-// TODO fill this out, get post information from generateStaticParams
-// return the whole slug
-
 export async function generateStaticParams() {
   const posts = getAllPosts();
 
