@@ -1,0 +1,8 @@
+# yes some of these are default, but i like it spelled out what i want _specifically_
+tabWidth: 2
+useTabs: false
+semi: false
+singleQuote: true
+quoteProps: 'as-needed'
+jsxSingleQuote: false
+bracketSpacing: true
