@@ -3,9 +3,9 @@ import './globals.css'
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html>
-      <body className="text-springfog font-mono bg-blue h-screen">
+      <body className="text-springfog font-mono bg-blue h-screen flex flex-col">
         <NavComponent />
-        {children}
+        <main className="grow h-[calc(100%-3.5rem)]">{children}</main>
         <Footer />
       </body>
     </html>
@@ -33,10 +33,8 @@ function NavComponent() {
 
 function Footer() {
   return (
-    <footer className="sticky bottom-0">
-      <div className="text-xs items-end">
-        &copy; Asim {new Date().getFullYear()}
-      </div>
+    <footer className="">
+      <div className="text-xs">&copy; Asim {new Date().getFullYear()}</div>
     </footer>
   )
 }

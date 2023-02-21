@@ -6,7 +6,7 @@ export default function BlogLayout({
   children: React.ReactNode
 }) {
   return (
-    <main>
+    <div className="flex flex-col">
       <header className="pt-6 pb-6  lg:text-left col-start-2">
         <h1 className="text-center lg:text-4xl text-2xl text-springfog font-extrabold underline">
           Asim's Idea Dump
@@ -15,9 +15,9 @@ export default function BlogLayout({
           I decided to make a place to put my thoughts out there
         </h4>
       </header>
-      <section className="text-lightorange row-start-2 col-start-2 text-lg md:text-2xl">
+      <section className="grow text-lightorange text-lg md:text-3xl">
         {children}
       </section>
-    </main>
+    </div>
   )
 }
