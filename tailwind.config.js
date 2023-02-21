@@ -5,6 +5,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}', // Note the addition of the `app` directory.
   ],
   theme: {
+    colors: {
+      blue: '#263f70',
+      springfog: '#f6f8f6',
+      lightorange: '#f3b5a9',
+    },
     extend: {
       animation: {
         'fade-in': 'fade-in 4s',
