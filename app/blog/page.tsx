@@ -12,13 +12,11 @@ import { type Post, getAllPosts } from './posts'
 export default function BlogPostList({ params }) {
   const posts = getAllPosts()
   return (
-    <article>
-      <ul>
-        {posts.map((post) => (
-          <PostLink key={post.slug} post={post} />
-        ))}
-      </ul>
-    </article>
+    <ul>
+      {posts.map((post) => (
+        <PostLink key={post.slug} post={post} />
+      ))}
+    </ul>
   )
 }
 
@@ -29,7 +27,7 @@ function PostLink({ post }: { post: Post }) {
       <Link className="underline" href={`/blog/${slug}`}>
         {title}
       </Link>{' '}
-      - {date}
+      <span className="text-springfog text-lg">- {date}</span>
     </li>
   )
 }
