@@ -7,10 +7,12 @@ module.exports = {
   theme: {
     colors: {
       blue: '#263f70',
-      springfog: '#f6f8f6',
-      lightorange: '#f3b5a9',
     },
     extend: {
+      colors: {
+        springfog: '#f6f8f6',
+        lightorange: '#f3b5a9',
+      },
       animation: {
         'fade-in': 'fade-in 4s',
       },

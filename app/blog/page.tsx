@@ -12,7 +12,7 @@ import { type Post, getAllPosts } from './posts'
 export default function BlogPostList({ params }) {
   const posts = getAllPosts()
   return (
-    <ul>
+    <ul className="flex flex-col space-y-4">
       {posts.map((post) => (
         <PostLink key={post.slug} post={post} />
       ))}
