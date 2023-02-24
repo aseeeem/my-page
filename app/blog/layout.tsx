@@ -14,8 +14,8 @@ export default function BlogLayout({
             I decided to make a place to put my thoughts out there
           </h4>
         </header>
-        <section className="grow pl-4 text-lightorange text-lg md:text-3xl">
-          {children}
+        <section className="grow pl-4 pr-4 text-lightorange text-lg md:text-3xl">
+          <div className="grid place-items-center">{children}</div>
         </section>
       </div>
     </>
