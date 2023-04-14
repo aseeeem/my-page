@@ -1,3 +1,3 @@
 export default function RootFooter() {
-  return <footer className="text-cyan-50">i'm still workin on this dw</footer>
+  return <footer className="text-slate-50">i'm still workin on this dw</footer>
 }

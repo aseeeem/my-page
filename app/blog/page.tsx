@@ -12,9 +12,16 @@ export default function BlogPostList({ params }) {
   const posts = getAllPosts()
   return (
     <ul className="flex flex-col space-y-4">
-      {posts.map((post) => (
-        <PostLink key={post.slug} post={post} />
-      ))}
+      {/* sort strings as date in descending order */}
+      {posts
+        .sort((a, b) => {
+          const dateA = new Date(a.date)
+          const dateB = new Date(b.date)
+          return dateB.getTime() - dateA.getTime()
+        })
+        .map((post) => (
+          <PostLink key={post.slug} post={post} />
+        ))}
     </ul>
   )
 }
@@ -26,7 +33,7 @@ function PostLink({ post }: { post: Post }) {
       <Link className="underline" href={`/blog/${slug}`}>
         {title}
       </Link>{' '}
-      <span className="text-springfog text-lg">- {date}</span>
+      <span className="text-slate-50 text-lg">- {date}</span>
     </li>
   )
 }

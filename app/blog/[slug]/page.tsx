@@ -7,7 +7,7 @@ export default function BlogArticle({ params }: { params: { slug: string } }) {
       <h1 className="md:text-4xl text-2xl pb-5 underline underline-offset-2">
         {post.title}
       </h1>
-      <article className="prose text-springfog prose-xl md:prose-2xl prose-invert">
+      <article className="prose lg:pt-2 text-gray-50 prose-xl md:prose-2xl prose-invert">
         <ReactMarkdown>{post.content}</ReactMarkdown>
       </article>
     </>

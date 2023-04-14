@@ -3,7 +3,7 @@ import './globals.css'
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html>
-      <body className="text-springfog font-mono bg-blue h-screen flex flex-col">
+      <body className="font-sans bg-slate-900 text-slate-50 font-light h-screen flex flex-col">
         <NavComponent />
         <main className="flex flex-col flex-grow pb-4">{children}</main>
         <Footer />
@@ -14,7 +14,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
 function NavComponent() {
   return (
-    <nav className="text-lightorange h-10 sticky pt-4 text-xl font-bold">
+    <nav className="text-slate-50 h-10 sticky pt-4 text-xl font-bold">
       <ul className="flex justify-around">
         <li>
           <Link className="hover:underline" href="/">
