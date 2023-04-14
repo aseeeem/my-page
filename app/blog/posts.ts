@@ -16,6 +16,9 @@ export function getAllPosts() {
   const postFiles = fs.readdirSync(ARTICLES_DIRECTORY)
   for (const post of postFiles) {
     const postData = matter.read(path.join(ARTICLES_DIRECTORY, post)) //?
+    if (postData.data.slug === `exhausted-by-the-web`) {
+      console.log(postData.content)
+    }
     posts.push({
       title: postData.data.title,
       slug: postData.data.slug,
