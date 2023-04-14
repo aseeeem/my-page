@@ -6,7 +6,7 @@ date: 02/24/2023
 
 ### The vibes are not it
 
-For the last few years there's been a decrease in, dare I say, _the vibes_ on the web. I didn't even realize it was happening at first but every time I'd check my social media there'd be a certain level of frustration I couldn't shake. Identifying the frustration is one thing but trying to capture the underlying causes was more difficult. I think where we're at with our web interactions isn't too different from previous years, at a surface level least. However if you pause to think about the subtle behavioral shifts you as a user have done in that time span you'll arrive at the same conclusion I have.
+For the last few years there's been a decrease in, dare I say, _the vibes_ on the web. I didn't even realize it was happening at first but every time I'd check my social media there'd be a certain level of frustration I couldn't shake. Identifying the frustration is one thing but trying to capture the underlying causes was more difficult. I think where we're at with our web interactions isn't too different from previous years, at a surface level least. However if you pause to think about the subtle behavioral shifts you as a user have done in that time span, you'll arrive at the same conclusion I have.
 
 _This shit is creepy._
 
@@ -32,7 +32,7 @@ The biggest flaw I've observed in these algorithms is that they incorrectly capt
 
 > "I just wanted some quick outfit inspirations but I don't want my page flooded with it"
 
-Previously, the subscription model allowed the user to explicitly opt in to content by subscribing to a channel or another user. They could like and dislike things to inform the platform of their desires to see more or less of it. Compare that to present where the user has lost direct control over what they see and in how much quantity.
+Previously, the subscription model allowed the user to explicitly opt-in to content by subscribing to a channel or another user. They could like and dislike things to inform the platform of their desires to see more or less of it. Compare that to present where the user has lost direct control over what they see and in how much quantity.
 
 If you look at Twitter, YouTube, and Instagram now there is no real correlation between liking content and seeing it on your feed. Inspecting a post, looking at it too long, or just leaving it open all implicitly inform the application of your supposed _interest_. It's also accelerating dangerously further in this direction, with YouTube having removed the concept of "dislikes" from their front end entirely.
 
@@ -44,9 +44,9 @@ You build up these small behaviors to avoid the almost-sentient-algorithm, waiti
 
 ### Its not that deep bro
 
-Maybe, but you'd have to convince me of any iota of good that comes from this version of the web and social media. I'm not immune to the "doom-scroll", nor would I think myself above anyone else if I was. I raise these points not to put down anyone who likes these things, but to vent my own frustrations that I can't opt out of this "feature" on the platform.
+Maybe, but you'd have to convince me of any iota of good that comes from this version of the web and social media. I'm not immune to the "doom-scroll", nor would I think myself above anyone else if I was. I raise these points not to put down anyone who likes these things, but to vent my own frustrations that I can't opt-out of this "feature" on the platform.
 
-I _like_ using social media. I like seeing my friends be happy in their lives or seeing the occasional update from the "ooo shit I forgot about that guy" we all have in our life. There is a joy in being connected through the thread of a digital presence. **The issue is that some unknown heuristic you can't control determines the rest of your experience.** My naïve curiosity about a person or a product is punished by a flood of semi-related information that you didn't ask for.
+I _like_ using social media. I like seeing my friends be happy in their lives or seeing the occasional update from the "ooo shit I forgot about that guy" we all have in our life. There is a joy in being connected through the thread of a digital presence. **The issue is that some unknown heuristic you can't control determines the rest of your experience.** My naïve curiosity about a person or a product is punished by a flood of semi-related information that I didn't ask for.
 
 ### What do we do
 
