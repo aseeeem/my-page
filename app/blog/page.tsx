@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { use } from 'react'
 import { type Post, getAllPosts } from './posts'
 
 // TODO
