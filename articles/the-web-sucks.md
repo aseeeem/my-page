@@ -28,9 +28,9 @@ Of course I'm not alone in this sense of displeasure, nor am I going to waste yo
 
 The biggest flaw I've observed in these algorithms is that they incorrectly capture the user's intent. Whether it's an accident or intentional I cannot say as I'm not in the meetings where they make these decisions. What I can say is that their misuse of data regarding user attention and focus leads to this mental pressure on the user end.
 
-> "I shouldn't look at this video too long or they think I'll want to see more of it."
+> I shouldn't look at this video too long or they think I'll want to see more of it.
 
-> "I just wanted some quick outfit inspirations but I don't want my page flooded with it"
+> I just wanted some quick outfit inspirations but I don't want my page flooded with it
 
 Previously, the subscription model allowed the user to explicitly opt-in to content by subscribing to a channel or another user. They could like and dislike things to inform the platform of their desires to see more or less of it. Compare that to present where the user has lost direct control over what they see and in how much quantity.
 
