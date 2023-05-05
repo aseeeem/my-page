@@ -1,6 +1,10 @@
 import Link from 'next/link'
 import { type Post, getAllPosts } from './posts'
 
+export const metadata = {
+  title: `Asim's Idea Dump`,
+}
+
 // TODO
 // make the link at the homepage have a query param of like "?article=newest" or something
 // the BlogsPostList param can then auto foward to the most recent or something? idk there's probably a way to do that
@@ -8,32 +12,39 @@ import { type Post, getAllPosts } from './posts'
  * list of blog pages available
  * the subroute [slug]/page.tsx will do the actual article rendering
  */
-export default function BlogPostList({ params }) {
+export default function BlogPostList() {
   const posts = getAllPosts()
   return (
-    <ul className="flex flex-col space-y-4">
-      {/* sort strings as date in descending order */}
-      {posts
-        .sort((a, b) => {
-          const dateA = new Date(a.date)
-          const dateB = new Date(b.date)
-          return dateB.getTime() - dateA.getTime()
-        })
-        .map((post) => (
-          <PostLink key={post.slug} post={post} />
-        ))}
-    </ul>
+    <main>
+      <section className="px-4 text-gray-50">
+        <ul className="flex-col items-center justify-center space-y-4">
+          {/* sort strings as date in descending order */}
+          {posts
+            .sort((a, b) => {
+              const dateA = new Date(a.date)
+              const dateB = new Date(b.date)
+              return dateB.getTime() - dateA.getTime()
+            })
+            .map((post) => (
+              <PostLink key={post.slug} post={post} />
+            ))}
+        </ul>
+      </section>
+    </main>
   )
 }
 
 function PostLink({ post }: { post: Post }) {
   const { slug, date, title } = post
   return (
-    <li>
-      <Link className="underline" href={`/blog/${slug}`}>
+    <li className="container mx-auto">
+      <Link
+        className="text-4xl font-extrabold text-purple-300"
+        href={`/blog/${slug}`}
+      >
         {title}
-      </Link>{' '}
-      <span className="text-slate-50 text-lg">- {date}</span>
+      </Link>
+      <p className="text-xs font-light text-gray-50">📝 {date}</p>
     </li>
   )
 }
