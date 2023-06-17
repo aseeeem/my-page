@@ -18,7 +18,7 @@ export default function BlogPostList() {
   return (
     <>
       <Navbar />
-      <main className="grid h-screen gap-2 pt-4">
+      <main className="grid gap-2 pt-4">
         <section className="container px-2 mx-auto text-gray-50">
           <ul className="grid gap-4">
             {/* sort strings as date in descending order */}
