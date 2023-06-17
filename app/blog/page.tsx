@@ -1,3 +1,4 @@
+import Navbar from '@/components/Navbar'
 import Link from 'next/link'
 import { type Post, getAllPosts } from './posts'
 
@@ -15,31 +16,34 @@ export const metadata = {
 export default function BlogPostList() {
   const posts = getAllPosts()
   return (
-    <main>
-      <section className="px-4 text-gray-50">
-        <ul className="flex-col items-center justify-center space-y-4">
-          {/* sort strings as date in descending order */}
-          {posts
-            .sort((a, b) => {
-              const dateA = new Date(a.date)
-              const dateB = new Date(b.date)
-              return dateB.getTime() - dateA.getTime()
-            })
-            .map((post) => (
-              <PostLink key={post.slug} post={post} />
-            ))}
-        </ul>
-      </section>
-    </main>
+    <>
+      <Navbar />
+      <main className="grid h-screen gap-2 pt-4">
+        <section className="container px-2 mx-auto text-gray-50">
+          <ul className="grid gap-4">
+            {/* sort strings as date in descending order */}
+            {posts
+              .sort((a, b) => {
+                const dateA = new Date(a.date)
+                const dateB = new Date(b.date)
+                return dateB.getTime() - dateA.getTime()
+              })
+              .map((post) => (
+                <PostLink key={post.slug} post={post} />
+              ))}
+          </ul>
+        </section>
+      </main>
+    </>
   )
 }
 
 function PostLink({ post }: { post: Post }) {
   const { slug, date, title } = post
   return (
-    <li className="container mx-auto">
+    <li className="flex flex-col gap-4">
       <Link
-        className="text-4xl font-extrabold text-purple-300"
+        className="text-2xl font-extrabold text-purple-300"
         href={`/blog/${slug}`}
       >
         {title}

@@ -13,18 +13,7 @@ export const metadata = {
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.className}`}>
-      <body className="font-light bg-slate-900 text-slate-50">
-        {children}
-        <Footer />
-      </body>
+      <body className="font-light bg-slate-900 text-slate-50">{children}</body>
     </html>
-  )
-}
-
-function Footer() {
-  return (
-    <footer>
-      <div className="text-xs">&copy; Asim {new Date().getFullYear()}</div>
-    </footer>
   )
 }
