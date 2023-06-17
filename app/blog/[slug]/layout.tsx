@@ -6,7 +6,7 @@ export default function BlogPostLayout({
   children: React.ReactNode
 }) {
   return (
-    <main className="h-screen">
+    <main>
       <Navbar />
       {children}
     </main>
